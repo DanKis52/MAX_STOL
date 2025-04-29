@@ -3,6 +3,85 @@
     margin: 0%;
 }
 
+.header{
+    max-width: 1600px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 0px;
+}
+
+.right{
+    display: flex;
+    gap: 120px;
+}
+
+.logo h1{
+    font-family: "Roboto";
+    color: #2E363E;
+    font-size: 52px;
+    line-height: 61px;
+    font-weight: bold;
+}
+
+.header a{
+    font-family: "Roboto";
+    color: #2E363E;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.contacts{
+    display: flex;
+    align-items: center;
+}
+
+.menu-items{
+    display: flex;
+}
+
+.menu-item{
+    display: inline;
+    margin-left: 60px;
+}
+
+.phone{
+    margin-left: 40px;
+}
+
+@media (max-width: 1280px) {
+    .header{
+        max-width: 1066px;
+        padding: 22px 0px;
+    }
+
+    .right{
+        gap: 70px;
+    }
+
+    .phone{
+        margin-left: 20px;
+    }
+
+    .menu-item{
+      margin-left: 40px;
+    }
+    .block1{
+        padding: 120px 107px 110px;
+    }
+    
+    .block2{
+        padding: 120px 107px 110px;
+    }
+}
+
 .banner{
     display: flex;
 }
@@ -65,17 +144,36 @@
   box-shadow: inset 0 0 0 3px   #F97832;
 }
 
-@media (max-width: 1280px) {
-    .block1{
-        padding: 120px 107px 110px;
-    }
-    
-    .block2{
-        padding: 120px 107px 110px;
-    }
-}
-
 @media (max-width: 768px) {
+    .header{
+        max-width: 640px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0px;
+    }
+
+    .contacts{
+        display: none;
+    }
+
+    .right{
+        gap: 0px;
+        width: 100%;
+    }
+
+    .menu{
+        width: 100%;
+    }
+
+    .menu-items{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .menu-item{
+        margin-left: 0px;
+      
     .block1{
         padding: 140px 128px 129px;
     }
@@ -91,6 +189,46 @@
 }
 
 @media (max-width: 576px) {
+    .header{
+        max-width: 480px;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 20px 0px;
+    }
+
+    .contacts{
+        display: none;
+    }
+
+    .right{
+        gap: 0px;
+        width: 100%;
+    }
+
+    .menu{
+        width: 100%;
+    }
+
+    .menu-items{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .menu-item{
+        margin-left: 0px;
+    }
+
+    .logo h1{
+        font-size: 40px;
+        line-height: 47px;
+    }
+    
+    .header a{
+        font-size: 14px;
+        line-height: 16px;
+    }
+
     .block1{
         padding: 100px 48px 96px;
         gap: 12px;
