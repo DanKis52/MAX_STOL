@@ -2,6 +2,47 @@
     padding: 0%;
     margin: 0%;
 }
+    
+.container{
+    max-width: 1600px;
+    margin: auto;
+}
+
+.katalog{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+    gap: 60px;
+}
+
+.cards_title{
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.cards_title h1{
+    font-family: "Roboto";
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.cards_title p{
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: medium;
+    max-width: 780px;
+    text-align: center;
+}
+
+.card_pics{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 10px;
 
 .header{
     max-width: 1520px;
@@ -163,6 +204,50 @@
         display: none;
     }
 }
+.img1{
+    grid-column: 2 span;
+    grid-row: 2 span;
+}
+
+.card{
+    max-width: 755px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-description{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.card_button{
+    color:#ffffff;
+    text-align: center;
+    background-color: #F97832;
+    border: none;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: "Roboto";
+    cursor:grab;
+    padding: 20px 60px;
+}
+
+.item_name{
+    font-family: "Roboto";
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.description{
+    font-family: "Roboto";
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
 
 @media (max-width: 768px) {
     .header{
