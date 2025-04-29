@@ -1,4 +1,3 @@
-
 *{
     padding: 0%;
     margin: 0%;
@@ -45,13 +44,166 @@
     grid-auto-flow: column;
     gap: 10px;
 
-
+.header{
+    max-width: 1520px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 40px;
 }
-.card_pics img{
-    max-width: 100%;
-    aspect-ratio: 1 / 1;
+
+.right{
+    display: flex;
+    gap: 120px;
 }
 
+.logo h1{
+    font-family: "Roboto";
+    color: #2E363E;
+    font-size: 52px;
+    line-height: 61px;
+    font-weight: bold;
+}
+
+.header a{
+    font-family: "Roboto";
+    color: #2E363E;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.contacts{
+    display: flex;
+    align-items: center;
+}
+
+.menu-items{
+    display: flex;
+}
+
+.menu-item{
+    display: inline;
+    margin-left: 60px;
+}
+
+.phone{
+    margin-left: 40px;
+}
+
+.banner{
+    display: flex;
+}
+
+.block1{
+    /*background-image: url(img/banner1.png);
+    background-repeat: no-repeat;*/
+    background-color: #1f1f1f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 300px 90px 245px;
+}
+
+.block2{
+    /*background-image: url(img/banner2.png);
+    background-repeat: no-repeat;*/
+    background-color: #4e4e4e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 300px 90px 245px;
+}
+
+.banner_H{
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #F6F6F6;
+}
+
+.banner_P{
+    text-align: center;
+    font-size: 18px;
+    font-family: "Roboto";
+    font-weight: 500;
+    line-height: 21px;
+    color: #F6F6F6;
+}
+
+.banner_button{
+    color:#ffffff;
+    text-align: center;
+    background-color: #F97832;
+    border: none;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: "Roboto";
+    cursor:grab;
+    padding: 20px 60px;
+}
+
+.banner_button:hover{
+  background: rgba(0,0,0,0);
+  color:  #F97832;
+  box-shadow: inset 0 0 0 3px   #F97832;
+}
+
+@media (max-width: 1280px) {
+    .header{
+        max-width: 1046px;
+        padding: 22px 10px;
+    }
+
+    .right{
+        gap: 70px;
+    }
+
+    .phone{
+        margin-left: 20px;
+    }
+
+    .menu-item{
+        margin-left: 40px;
+    }
+    .block1{
+        padding: 120px 107px 110px;
+    }
+    
+    .block2{
+        padding: 120px 107px 110px;
+    }
+}
+
+@media (max-width: 1060px) {
+
+    .header{
+        max-width: 768px;
+    }
+
+    .contacts{
+        display: none;
+    }
+
+    .logo h1{
+        font-size: 40px;
+        line-height: 47px;
+    }
+
+    .block2{
+        display: none;
+    }
+}
 .img1{
     grid-column: 2 span;
     grid-row: 2 span;
@@ -96,4 +248,84 @@
     font-size: 18px;
     line-height: 21px;
     text-align: center;
+
+@media (max-width: 768px) {
+    .header{
+        max-width: 620px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 10px;
+    }
+
+    .right{
+        gap: 0px;
+        width: 100%;
+    }
+
+    .menu{
+        width: 100%;
+    }
+
+    .menu-items{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .menu-item{
+        margin-left: 0px;
+    }
+    .block1{
+        padding: 140px 128px 129px;
+    }
+    
+    .block2{
+        display: none;
+    }
+
+    .banner_H{
+        font-size: 40px;
+        line-height: 47px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header{
+        max-width: 480px;
+        gap: 12px;
+    }
+
+    .logo h1{
+        font-size: 40px;
+        line-height: 47px;
+    }
+    
+    .header a{
+        font-size: 14px;
+        line-height: 16px;
+    }
+  
+    .block1{
+        padding: 100px 48px 96px;
+        gap: 12px;
+    }
+    
+    .block2{
+        display: none;
+    }
+
+    .banner_H{
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .banner_P{
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .banner_button{
+        font-size: 12px;
+        line-height: 14px;
+    }
 }
