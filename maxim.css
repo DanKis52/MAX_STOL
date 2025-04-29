@@ -1,60 +1,99 @@
 
 *{
     padding: 0%;
-    margin: 0%;}
+    margin: 0%;
+}
     
 .container{
-    padding-left: 160px;
-    padding-right: 160px;
+    max-width: 1600px;
+    margin: auto;
 }
+
 .katalog{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin-top: 40px;
+    gap: 60px;
 }
+
 .cards_title{
-    width: 1600px;
-    margin-top: 60px;
+    padding-top: 60px;
     display: flex;
     flex-direction: column;
+    gap: 20px;
     align-items: center;
 }
+
 .cards_title h1{
-    height: 56px;
-    width: 640px;
     font-family: "Roboto";
     font-size: 48px;
     font-weight: 700;
     text-align: center;
 }
+
 .cards_title p{
-    width: 780px;
-    height: 63px;
-    margin-top: 20px;
     font-family: "Roboto";
     font-size: 18px;
-    font-weight: 500;
+    font-weight: medium;
+    max-width: 780px;
     text-align: center;
 }
-.card{
-    width: 755px;
-    height: 717px;
-}
+
 .card_pics{
     display: grid;
-    grid-template-columns: [start] 245px [line2] 245px [line3] 245px;
-    grid-template-rows: [row1] 250px [last] 250px;
     grid-auto-flow: column;
-    margin-top: 40px;
-    width: 755px;
-    height: 500px;
-    gap: 5px;
+    gap: 10px;
+
+
 }
 .card_pics img{
     max-width: 100%;
     aspect-ratio: 1 / 1;
 }
+
 .img1{
     grid-column: 2 span;
     grid-row: 2 span;
+}
+
+.card{
+    max-width: 755px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-description{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.card_button{
+    color:#ffffff;
+    text-align: center;
+    background-color: #F97832;
+    border: none;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: "Roboto";
+    cursor:grab;
+    padding: 20px 60px;
+}
+
+.item_name{
+    font-family: "Roboto";
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.description{
+    font-family: "Roboto";
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
 }
